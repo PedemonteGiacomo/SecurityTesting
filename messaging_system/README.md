@@ -14,13 +14,15 @@ a' OR True LIMIT 2,1 -- -
 ### SETUP
 # install docker
 docker stop mysql-container
-docker start mysql-container
+docker start MySQL-container
 
-# start mysql
+# start MySQL
 mysql -h 172.17.0.2 -u root -p
 
-# start php Server in the current repo/directory
+# start php Server in the server_side repo/directory
 php -S 0.0.0.0:1234
 
 # TODO:
 check the last slides to perform injections on the search.php and password_recovery.php
+
+...
