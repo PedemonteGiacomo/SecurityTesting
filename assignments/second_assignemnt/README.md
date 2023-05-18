@@ -2,7 +2,7 @@
 
 In this assignment, you will build a new test suite that tests the target application for Union-based SQL Injections, similar to the one you built in Assignment 1.
 
-While in Assignment 1 you could use plain Python for your test suite, for this assignment you will use pytest to organize and run your tests steps.
+While in Assignment 1 you could use plain Python for your test suite, for this assignment you will use pytest to organize and run your test steps.
 
 This is very similar to using plain Python: you can create tests as simple Python functions, but the name of the function must always start with "test_". 
 
@@ -13,7 +13,6 @@ If you structure your code like this, you should only need to install pytest (pi
 Tests will be automatically run.
 
 Here is an example of a simple pytest file:
-
     def test_this_always_succeeds():
         assert True
 
@@ -52,6 +51,7 @@ WARNING: due to how the built-in server and the MySQL modules work, you will nee
     php -d "display_errors=1" -S localhost:4000
 
 Alternatively, you can add the following line at the beginning of every PHP file in the target:
+
     ini_set('display_errors', 1); 
     
 # Testing
@@ -60,7 +60,7 @@ For each page of the target application, you should design and implement a test 
 
 if the page is working correctly (e.g., for login pages, that the login is working correctly)
 if the page is vulnerable to SQL injection.
-In particular, you should test the page for Union-based and Error-based SQL Injections (but you can also have additional steps, if you want).
+In particular, you should test the page for Union-based and Error-based SQL Injections (but you can also have additional steps if you want).
 
 Tests should take into account all possible variants of syntax and insufficient sanitization that could be applied to the page.
 
